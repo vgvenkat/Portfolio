@@ -1,0 +1,40 @@
+$font-family : 'Raleway', sans-serif;
+$body-bgcolor: #e2e9ec;
+
+@import url(http://weloveiconfonts.com/api/?family=zocial);
+
+/* zocial */
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif;
+}
+
+
+html {
+  min-height: 100%;
+  position: relative;
+}
+body {
+    font-family: $font-family;
+     background-color: $body-bgcolor;
+     margin-bottom: 60px;
+    // background-color: #fff;
+}
+
+.container {
+  margin: 5%;
+}
+
+article {
+  margin: 0 5%;
+  padding-bottom: 20px;
+}
+  .portfolio {
+    display: flex;
+    flex-wrap: wrap;
+  }
+footer {
+  bottom: 0;
+  position: absolute;
+  height: 60px;
+  width: 100%;
+}

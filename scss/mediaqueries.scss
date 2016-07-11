@@ -1,0 +1,10 @@
+$section-border-color: #e43939;
+
+@media only screen and (max-width:500px) {
+
+  section {
+    font-size: 1.25em;
+    border-bottom: 1px solid $section-border-color;
+    line-height: 1em;
+  }
+}

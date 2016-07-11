@@ -1,0 +1,7 @@
+scssDir: scss/
+jsDir: js/
+imgDir: img/
+cssDist: dist/css/
+jsDist: dist/js/
+imgDist: dist/img/
+Dist: dist/
