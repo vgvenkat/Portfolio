@@ -1,6 +1,7 @@
 $font-family : 'Raleway', sans-serif;
-$body-bgcolor: #e2e9ec;
-
+$body-bgcolor: #f1f5f7;
+$header-font-color: #bf3a67;
+$link-color: #b94141;
 @import url(http://weloveiconfonts.com/api/?family=zocial);
 
 /* zocial */
@@ -16,12 +17,50 @@ html {
 body {
     font-family: $font-family;
      background-color: $body-bgcolor;
+     margin: 0;
      margin-bottom: 60px;
-    // background-color: #fff;
+}
+img {
+  max-width:100%;
+}
+figure {
+  margin: 0;
 }
 
-.container {
+/*
+* General anchor links
+*/
+a {color: $link-color; cursor: pointer}      /* unvisited link */
+a:visited {color: $link-color;}  /* visited link */
+a:hover {color: $link-color;}  /* mouse over link */
+a:active {color: $link-color;}  /* selected link */
+/*
+*
+margin
+*
+*/
+
+header,
+.container
+ {
   margin: 5%;
+}
+footer {
+  margin-left: 5%;
+}
+
+/*
+* Header text color
+*/
+h1, h2 {
+  color: $header-font-color;
+}
+
+/*
+* Header text shadow
+*/
+header h1 {
+  text-shadow: 7px 6px 6px rgba(226, 150, 150, 1);
 }
 
 article {
@@ -32,9 +71,35 @@ article {
     display: flex;
     flex-wrap: wrap;
   }
+figcaption {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  margin: 10px;
+}
+figcaption + p {
+  text-align: center;
+}
 footer {
   bottom: 0;
   position: absolute;
   height: 60px;
-  width: 100%;
+  max-width: 100%;
+}
+
+/*
+* Social links
+*/
+.connect_links li {
+  list-style: none;
+}
+.connect_links ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+.connect_links a {
+  text-decoration: none;
 }
