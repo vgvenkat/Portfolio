@@ -1,10 +1,109 @@
 $section-border-color: #e43939;
 
+
 @media only screen and (max-width:500px) {
+  header h1 {
+    font-size: inherit;
+  }
+  section {
+    font-size: 1.25em;
+    border-bottom: 1px solid $section-border-color;
+    line-height: 1em;
+  }
+}
+
+@media all and (max-width: 768px) {
+
+  header h1 {
+    text-align: center;
+    font-size: 3em;
+  }
 
   section {
     font-size: 1.25em;
     border-bottom: 1px solid $section-border-color;
     line-height: 1em;
   }
+
+  .introduction {
+    text-align: center;
+  }
+    .portfolio article:first-of-type {
+      width: 100%;
+    }
+    .projects {
+      margin: 0 auto;
+    }
+
+
+}
+@media only screen and (min-width: 800px) {
+  header h1 {
+    font-size: 2.5em;
+  }
+  .portfolio article:first-of-type {
+    width: 100%;
+  }
+  section {
+    font-size: 1.25em;
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .introduction {
+    order: 1;
+    flex-basis: 40%;
+    border-bottom: 1px solid $section-border-color;
+  }
+  .portfolio {
+    order: 2;
+    flex-basis: 60%;
+    margin-top: -10px;
+
+  }
+  .social {
+    order: 3;
+    flex-direction: column;
+    flex-basis: 75%;
+    font-size: 1.5em;
+  }
+
+}
+@media all and (min-width: 1000px) {
+  header h1 {
+    text-align: center;
+    font-size: 3em;
+  }
+  .introduction {
+    text-align: center;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .portfolio article:first-of-type {
+    width: 100%;
+  }
+  section {
+    font-size: 1.25em;
+    border-bottom: 1px solid $section-border-color;
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .portfolio {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .projects {
+    margin: 0;
+  }
+  .social {
+
+    font-size: 1.5em;
+  }
+
 }

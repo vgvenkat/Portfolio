@@ -1,7 +1,8 @@
 $font-family : 'Raleway', sans-serif;
-$body-bgcolor: #f1f5f7;
-$header-font-color: #bf3a67;
-$link-color: #b94141;
+$body-bgcolor: #fff;
+$header-font-color: #EF6C00;
+$link-color: #EF6C00;
+$section-header: #e43939;
 @import url(http://weloveiconfonts.com/api/?family=zocial);
 
 /* zocial */
@@ -45,22 +46,22 @@ header,
  {
   margin: 5%;
 }
-footer {
-  margin-left: 5%;
-}
+
 
 /*
 * Header text color
 */
-h1, h2 {
+h1 {
   color: $header-font-color;
 }
-
+h2 {
+  color: $section-header;
+}
 /*
 * Header text shadow
 */
 header h1 {
-  text-shadow: 7px 6px 6px rgba(226, 150, 150, 1);
+  text-shadow: 7px 6px 6px #ffcc80;
 }
 
 article {
@@ -84,22 +85,34 @@ footer {
   bottom: 0;
   position: absolute;
   height: 60px;
-  max-width: 100%;
+  width: 100%;
+  margin-left: 0;
+text-align: center;
+background: antiquewhite;
 }
+
+/*
+* Portfolio
+*/
+
 
 /*
 * Social links
 */
-.connect_links li {
+.connect_links  li {
   list-style: none;
+  font-size: 1.2em;
 }
 .connect_links ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 0;
   padding: 0;
 }
 .connect_links a {
   text-decoration: none;
+}
+.connect_links li:hover {
+  cursor: pointer;
 }
