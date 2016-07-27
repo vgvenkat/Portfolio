@@ -79,11 +79,11 @@ module.exports = function(grunt) {
     });
 
     grunt.registerTask('default', [
-      "clean",
+      //"clean",
       "concat",
       "sass",
       "jshint",
-      "responsive_images",
+      //"responsive_images",
       "connect"
     ]);
 
