@@ -1,8 +1,14 @@
 # Portfolio
 This will have all updates to my personal website hosted to vgvenkataraman.com
 
-Run 
-`grunt` for building dist and syncing changes
-and `grunt dev` for running server. 
+#### Steps to run code
+- clone project
+- `$ cd Portfolio`
+- `$ grunt` for running server
 
-Refresh browser to see changes after grunt tasks run. (Need to do live reload)
+grunt file can be repurposed in a better way, holds good for now.
+
+
+#### License
+
+Have fun with the code base . No attributions necessary 👍😎
