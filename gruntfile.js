@@ -84,10 +84,10 @@ module.exports = function(grunt) {
       "sass",
       "jshint",
       "responsive_images",
-      "watch"
+      "connect"
     ]);
 
-    grunt.registerTask('dev', ["connect"]);
+    grunt.registerTask('dev', ["watch"]);
 
 };
 
