@@ -35,6 +35,11 @@ a {color: $link-color; cursor: pointer}      /* unvisited link */
 a:visited {color: $link-color;}  /* visited link */
 a:hover {color: $link-color;}  /* mouse over link */
 a:active {color: $link-color;}  /* selected link */
+
+img {
+  border: 1px dashed skyblue;
+  padding: 1px;
+}
 /*
 *
 margin
@@ -64,6 +69,10 @@ header h1 {
   text-shadow: 7px 6px 6px #ffcc80;
 }
 
+
+/*
+* Portfolio
+*/
 article {
   margin: 0 5%;
   padding-bottom: 20px;
@@ -81,6 +90,8 @@ figcaption {
 figcaption + p {
   text-align: center;
 }
+
+
 footer {
   bottom: 0;
   position: absolute;
@@ -91,9 +102,6 @@ text-align: center;
 background: antiquewhite;
 }
 
-/*
-* Portfolio
-*/
 
 
 /*
@@ -115,8 +123,4 @@ background: antiquewhite;
 }
 .connect_links li:hover {
   cursor: pointer;
-}
-img {
-  border: 1px dashed skyblue;
-  padding: 1px;
 }
