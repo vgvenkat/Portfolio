@@ -1,0 +1,176 @@
+@import url(http://weloveiconfonts.com/api/?family=zocial);
+@media only screen and (max-width: 500px) {
+  header h1 {
+    font-size: inherit; }
+
+  section {
+    font-size: 1.25em;
+    border-bottom: 1px solid #e43939;
+    line-height: 1em; } }
+@media all and (max-width: 999px) {
+  header h1 {
+    text-align: center;
+    font-size: 3em; }
+
+  section {
+    font-size: 1.25em;
+    border-bottom: 1px solid #e43939;
+    line-height: 1em; }
+
+  .introduction {
+    text-align: center; }
+
+  .portfolio article:first-of-type {
+    width: 100%; }
+
+  .projects {
+    margin: 0 auto; } }
+@media all and (min-width: 1000px) {
+  header h1 {
+    text-align: center;
+    font-size: 3em; }
+
+  .introduction {
+    text-align: center; }
+
+  .container {
+    flex-direction: column; }
+
+  .portfolio article:first-of-type {
+    width: 100%; }
+
+  section {
+    font-size: 1.25em;
+    border-bottom: 1px solid #e43939; }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap; }
+
+  .portfolio {
+    flex-direction: row;
+    justify-content: space-around; }
+
+  .projects {
+    margin: 0; }
+
+  .social {
+    font-size: 1.5em; } }
+/* zocial */
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif; }
+
+html {
+  min-height: 100%;
+  position: relative; }
+
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: #fff;
+  margin: 0;
+  margin-bottom: 60px; }
+
+img {
+  max-width: 100%; }
+
+figure {
+  margin: 0; }
+
+/*
+* General anchor links
+*/
+a {
+  color: #EF6C00;
+  cursor: pointer; }
+
+/* unvisited link */
+a:visited {
+  color: #EF6C00; }
+
+/* visited link */
+a:hover {
+  color: #EF6C00; }
+
+/* mouse over link */
+a:active {
+  color: #EF6C00; }
+
+/* selected link */
+img {
+  border: 1px dashed skyblue;
+  padding: 1px; }
+
+/*
+*
+margin
+*
+*/
+header,
+.container {
+  margin: 5%; }
+
+/*
+* Header text color
+*/
+h1 {
+  color: #EF6C00; }
+
+h2 {
+  color: #e43939; }
+
+/*
+* Header text shadow
+*/
+header h1 {
+  text-shadow: 7px 6px 6px #ffcc80; }
+
+/*
+* Portfolio
+*/
+article {
+  margin: 0 5%;
+  padding-bottom: 20px; }
+
+.portfolio {
+  display: flex;
+  flex-wrap: wrap; }
+
+figcaption {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  margin: 10px; }
+
+figcaption + p {
+  text-align: center; }
+
+footer {
+  bottom: 0;
+  position: absolute;
+  height: 60px;
+  width: 100%;
+  margin-left: 0;
+  text-align: center;
+  background: antiquewhite; }
+
+/*
+* Social links
+*/
+.connect_links li {
+  list-style: none;
+  font-size: 1.2em; }
+
+.connect_links ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0; }
+
+.connect_links a {
+  text-decoration: none; }
+
+.connect_links li:hover {
+  cursor: pointer; }
+
+/*# sourceMappingURL=styles.css.map */
